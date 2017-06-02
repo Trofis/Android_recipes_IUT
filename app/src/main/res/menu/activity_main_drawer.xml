@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rec"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Ajouter Recette" />
+        <item
+            android:id="@+id/nav_ing"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Ajouter Ingrédient" />
+
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="profil" />
+
+    </group>
+
+
+</menu>

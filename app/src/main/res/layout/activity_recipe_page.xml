@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/recipeImg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Title"
+            android:id="@+id/title_recipe"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="392dp"
+            android:layout_height="34dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ingrédients :"
+            android:id="@+id/titleIng"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="394dp"
+            android:layout_height="77dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bijour"
+            android:id="@+id/ingredientsListe"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer Recette"
+            android:id="@+id/supprimerRecette"
+            android:layout_gravity="right"
+            android:background="#ff0000"
+            android:textColor="#ffffff"
+            android:onClick="supprimerRecette"
+            android:elegantTextHeight="false"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like Recette"
+            android:id="@+id/like"
+            android:background="#171fad"
+            android:onClick="likeRecette"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</LinearLayout>

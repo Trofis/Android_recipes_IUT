@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eddymalou.iut_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_cook"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eddymalou.iut_project.MainActivity" />
+        </activity>
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".RecipePage"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ajouter_recette"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ajouter_ingredient"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".research_result"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".profil" android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
